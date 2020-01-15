@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun 18 14:45:05 2019
+# Process ID: 10708
+# Current directory: D:/14051032이재호_final/final_project/final_project.runs/synth_1
+# Command line: vivado.exe -log final.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source final.tcl
+# Log file: D:/14051032이재호_final/final_project/final_project.runs/synth_1/final.vds
+# Journal file: D:/14051032이재호_final/final_project/final_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source final.tcl -notrace
+Command: synth_design -top final -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 236 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 357.137 ; gain = 99.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'final' [D:/14051032이재호_final/final_project/final_project.srcs/sources_1/new/final_project.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_ctrl' [D:/14051032이재호_final/vga_ctrl/vga_ctrl.srcs/sources_1/new/vga_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_ctrl' (1#1) [D:/14051032이재호_final/vga_ctrl/vga_ctrl.srcs/sources_1/new/vga_ctrl.v:1]
+ERROR: [Synth 8-91] ambiguous clock in event control [D:/14051032이재호_final/final_project/final_project.srcs/sources_1/new/final_project.v:444]
+ERROR: [Synth 8-6156] failed synthesizing module 'final' [D:/14051032이재호_final/final_project/final_project.srcs/sources_1/new/final_project.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.367 ; gain = 153.645
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+5 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 18 14:45:15 2019...
